@@ -1,8 +1,15 @@
-import React, { useState, ReactNode, CSSProperties, useId } from "react";
+import React, {
+  useState,
+  ReactNode,
+  CSSProperties,
+  useId,
+  useEffect,
+} from "react";
 import { useSwipeable } from "react-swipeable";
 import "./styles.css";
 
 type Props = {
+  isOpen: boolean;
   children: ReactNode;
   actionButtons: {
     content: ReactNode;
@@ -19,6 +26,7 @@ type Props = {
 };
 
 const SwipeToRevealActions: React.FC<Props> = ({
+  isOpen,
   children,
   actionButtons,
   containerStyle,
@@ -38,6 +46,12 @@ const SwipeToRevealActions: React.FC<Props> = ({
     trackMouse: true,
   });
   const id = useId();
+
+  useEffect(() => {
+    if (isExpanded !== isOpen) {
+      setIsExpanded(isOpen);
+    }
+  }, [isOpen]);
 
   function handlePanStart(e: any) {
     if (e.dir === "Down" || e.dir === "Up") {
