@@ -1,4 +1,4 @@
-<h1 align="center">react-swipe-to-reveal-actions 👋</h1>
+<h1 align="center">FORK: react-swipe-to-reveal-actions 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.1.1-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/nicklassvendsrud/react-swipe-to-reveal-actions#readme" target="_blank">
@@ -60,27 +60,27 @@ export default const MyListItem = () => {
 
 ### Props
 
-
 **Required props are marked with `*`.**
 
-| Name         | Type     | Default | Description                                                                        |
-| ------------ | -------- | ------- | ---------------------------------------------------------------------------------- |
-| `children`\*   | `React.ReactNode`   | `-`     | The content of the item itself                                                   |
-| `actionButtons`\*  | `{ content: React.ReactNode \ Element; onClick: () => void; role?: string; }[]`   | `-`     | An array objects with the contents and onClicks for each action button |
-| `actionButtonMinWidth`\* | `number`   | `-`     | The minimum width of each action button (px)                                                   |
-| `height`      | `string`   | `56px`     | The height of the item. Can be px, rem or em - that's why this is a string                               |
-| `containerStyle`     | `React.CSSProperties`   | `-`     | Optional styles for the item container                    |
-| `onOpen`       | `() => void` | `-`     | Callback when item is expanded by swipe or click                                       |
-| `onClose`       | `() => void` | `-`     | Callback when item is collapsed by swipe or click                                       |
-| `hideDotsButton`       | `boolean` | `-`     | Hides the three dots that can be clicked to expand the item                                      |
-| `dotsBtnAriaLabel`       | `string` | `Click to reveal actions`     | a11y label text for the dots button                                      |
+| Name                     | Type                                                                            | Default                   | Description                                                                |
+| ------------------------ | ------------------------------------------------------------------------------- | ------------------------- | -------------------------------------------------------------------------- |
+| `children`\*             | `React.ReactNode`                                                               | `-`                       | The content of the item itself                                             |
+| `actionButtons`\*        | `{ content: React.ReactNode \ Element; onClick: () => void; role?: string; }[]` | `-`                       | An array objects with the contents and onClicks for each action button     |
+| `actionButtonMinWidth`\* | `number`                                                                        | `-`                       | The minimum width of each action button (px)                               |
+| `height`                 | `string`                                                                        | `56px`                    | The height of the item. Can be px, rem or em - that's why this is a string |
+| `containerStyle`         | `React.CSSProperties`                                                           | `-`                       | Optional styles for the item container                                     |
+| `isOpen`                 | `boolean`                                                                       | `-`                       | used to open/close the swipe reactively                                    |
+| `onOpen`                 | `() => void`                                                                    | `-`                       | Callback when item is expanded by swipe or click                           |
+| `onClose`                | `() => void`                                                                    | `-`                       | Callback when item is collapsed by swipe or click                          |
+| `hideDotsButton`         | `boolean`                                                                       | `-`                       | Hides the three dots that can be clicked to expand the item                |
+| `dotsBtnAriaLabel`       | `string`                                                                        | `Click to reveal actions` | a11y label text for the dots button                                        |
 
 ## Author
 
-👤 **Nicklas Svendsrud**
+👤 **Original Author: Nicklas Svendsrud**
 
-* Github: [@nicklassvendsrud](https://github.com/nicklassvendsrud)
-* LinkedIn: [@nicklassvendsrud](https://linkedin.com/in/nicklassvendsrud)
+- Github: [@nicklassvendsrud](https://github.com/nicklassvendsrud)
+- LinkedIn: [@nicklassvendsrud](https://linkedin.com/in/nicklassvendsrud)
 
 ## 🤝 Contributing
 
@@ -95,5 +95,7 @@ Give a ⭐️ if this project helped you!
 Copyright © 2021 [Nicklas Svendsrud](https://github.com/nicklassvendsrud).<br />
 This project is [MIT](https://github.com/nicklassvendsrud/react-swipe-to-reveal-actions/blob/master/LICENSE) licensed.
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+
