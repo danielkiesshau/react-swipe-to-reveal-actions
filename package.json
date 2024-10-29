@@ -12,7 +12,8 @@
     "copy-files-esm": "copyfiles -e **/*.ts -e **/*.tsx -e ./src/example/ -e ./src/jest/ -e ./src/__tests__/ -e ./src/jest.config.js -e ./src/jest.setup.js -u 1 src/*.css dist/esm/",
     "copy-files-cjs": "copyfiles -e **/*.ts -e **/*.tsx -e ./src/example/ -e ./src/jest/ -e ./src/__tests__/ -e ./src/jest.config.js -e ./src/jest.setup.js -u 1 src/*.css dist/cjs/",
     "tsc": "npm run clean && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && npm run copy-files-esm && npm run copy-files-cjs",
-    "prepare": "npm run tsc"
+    "prepare": "npm run tsc",
+    "build": "tsup"
   },
   "author": "Nicklas Svendsrud",
   "license": "MIT",
@@ -31,6 +32,9 @@
     "react": "^18.2.0",
     "react-swipeable": "^7.0.0"
   },
+  "publishConfig": {
+    "registry": "https://registry.us.gympass.cloud/repository/npm-hosted"
+  },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
@@ -43,6 +47,8 @@
     "react-dom": "^18.2.0",
     "ts-jest": "^29.1.0",
     "tslib": "^2.5.0",
+    "tsup": "^8.3.5",
     "typescript": "^5.0.4"
-  }
+  },
+  "packageManager": "yarn@4.4.0+sha512.91d93b445d9284e7ed52931369bc89a663414e5582d00eea45c67ddc459a2582919eece27c412d6ffd1bd0793ff35399381cb229326b961798ce4f4cc60ddfdb"
 }

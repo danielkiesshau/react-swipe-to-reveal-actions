@@ -9,3 +9,4 @@ dist-ssr
 # Ignore test-related files
 /coverage.data
 /coverage/
+.yarn/install-state.gz
